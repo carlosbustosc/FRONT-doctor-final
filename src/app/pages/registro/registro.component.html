@@ -1,0 +1,35 @@
+<div class="contenedor_principal_registro">
+    <div class="contenedor_formulario_registro">
+        <form [formGroup]="formulario" (ngSubmit)="registrar()">
+            <div class="col-md-12 form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" formControlName="nombre" />
+                <small class="text-danger" *ngIf="nombreNoValido">Escriba el nombre</small>
+            </div>
+
+
+
+            <div class="col-md-12 form-group">
+                <label>Correo Electronico</label>
+                <input type="text" class="form-control" formControlName="correo" />
+                <small class="text-danger" *ngIf="correoNoValido">Escriba el correo electronico</small>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <label>contraseña</label>
+                <input type="password" class="form-control" formControlName="contrasena" />
+                <small class="text-danger" *ngIf="contrasenaNoValido">Escriba la contraseña</small>
+            </div>
+            <div class="col-md-12 form-group">
+                <label>Repita la contraseña</label>
+                <input type="password" class="form-control" formControlName="contrasena2" />
+                <small class="text-danger" *ngIf="contrasena2NoValida">Escriba la contraseña2</small>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <button type="submit" class="registrar">Registrar</button>
+                <label class="label_ingreso">¿quieres ingresar? / <span class="texto_login" [routerLink]="['login']">LOGIN</span></label>
+            </div>
+        </form>
+    </div>
+</div>

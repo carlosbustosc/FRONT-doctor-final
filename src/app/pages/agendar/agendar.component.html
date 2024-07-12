@@ -1,0 +1,141 @@
+<div class="contenedor_principal_agendar">
+    <div [routerLink]=" ['/pacientes'] ">
+        <a _ngcontent-agl-c51="" class="texto_volver" *ngIf="formularioNuevo"><i _ngcontent-agl-c51="" class="fa-solid fa-reply"></i></a>
+    </div>
+
+    <a _ngcontent-agl-c51="" class="texto_volver" (click)="volverForm()" *ngIf="reAgendar"><i _ngcontent-agl-c51="" class="fa-solid fa-reply"></i></a>
+    <button type="button" class="texto_agendar_nuevo gestionar" (click)="traerCita()" *ngIf="formularioNuevo">Gestionar mis citas</button>
+ 
+
+    
+    <div class="container" *ngIf="formularioNuevo">
+        <h2 class="indicacion_agendar" *ngIf="OcultarReagendar">Agendar cita </h2>
+        <h2 class="indicacion_agendar" *ngIf="reagendarVIDUAL">Re-Agendar cita </h2>
+
+        <p class="texto_indicador">Seleccion el horario y agende la cita</p>
+        <div class="contenedor_agendar">
+            
+            <form [formGroup]="agendarPaciente"  >
+                <div class="form-group">
+                    <label>Nombre paciente</label>
+                    <input type="text" class="form-control" formControlName="nombre" readonly="readonly" />
+                    <small class="text-danger" *ngIf="nombreNoValido">Escriba el nombre del paciente</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Numero de Documento</label>
+                    <input type="text" class="form-control" formControlName="documento" readonly="readonly" />
+                    <small class="text-danger" *ngIf="documentoNoValido">Escriba el numero de documento</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Correo electronico</label>
+                    <input type="text" class="form-control" formControlName="correo" readonly="readonly" />
+         
+                </div>
+
+                <div class="form-group">
+                    <label>Seleccione sede</label>
+                    <select class="form-control" formControlName="sede">
+                        <option ></option>
+                        <option value="Unidad de Urgencias Puente Aranda">Unidad de Urgencias Puente Aranda</option>
+                        <option value="Centro Medico Especialistas Autopista Norte">Centro Medico Especialistas Autopista Norte</option>
+                        <option value="Centro Medico Suba Centro">Centro Medico Suba Centro</option>
+                        <option value="Centro Médico Calle 13 - Local 17">Centro Médico Calle 13 - Local 17</option>
+                        <option value="Centro Médico Calle 80">Centro Médico Calle 80</option>
+                        <option value="Centro Médico Chico Navarra">Centro Médico Chico Navarra</option>
+                        <option value="Centro Médico Fontibón">Centro Médico Fontibón</option>
+                        <option value="Centro Médico Galerias - Plan Premium">Centro Médico Galerias - Plan Premium</option>
+                        <option value="Centro Médico Kennedy">Centro Médico Kennedy</option>
+                        <option value="Centro Médico Nariño">Centro Médico Nariño</option>
+                        <option value="Centro Médico Norte">Centro Médico Norte</option>
+                        <option value="Centro Médico Paralela 103">Centro Médico Paralela 103</option>
+                        <option value="Centro Médico Pediátrico">Centro Médico Pediátrico</option>
+                        <option value="Centro Médico Plaza Central">Centro Médico Plaza Central</option>
+                        <option value="Centro Médico Plaza de las Américas">Centro Médico Plaza de las Américas</option>
+                        <option value="Centro Médico Restrepo">Centro Médico Restrepo</option>
+                        <option value="Centro Médico Santa Barbara">Centro Médico Santa Barbara</option>
+                        <option value="Centro Médico Suba">Centro Médico Suba</option>
+                        <option value="Centro Médico Teusaquillo">Centro Médico Teusaquillo</option>
+                        <option value="Centro Médico Tunal">Centro Médico Tunal</option>
+                        <option value="Centro Médico Zona IN Local 100">Centro Médico Zona IN Local 100</option>
+                        <option value="Centro Médico de Especialistas Castellana">Centro Médico de Especialistas Castellana</option>
+                        <option value="Unidad de Urgencias Norte">Unidad de Urgencias Norte</option>
+
+
+
+                    </select>
+                    <small class="text-danger" *ngIf="sedeNoValido">Seleccione la sede</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Seleccione doctor</label>
+                    <select formControlName="doctor" class="form-control">
+                        <option value="Ricardo Molano Rodriguez">Ricardo Molano Rodriguez</option>
+                        <option value="Andrea Milena Fajardo Pedraza">Andrea Milena Fajardo Pedraza</option>
+                    </select>
+                    <small class="text-danger" *ngIf="doctorNoValido">Seleccione Doctor</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Seleccione horario</label>
+                    <input type="date" class="form-control" formControlName="horario">
+                    <small class="text-danger" *ngIf="horarioNoValido">Seleccione el horario</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Seleccione hora</label>
+                    <input type="time" class="form-control" formControlName="hora">
+                    <small class="text-danger" *ngIf="horaNoValida">Seleccione la hora</small>
+                </div>
+
+                <div class="form-group">
+                    <button type="button" class="texto_agendar_nuevo" (click)="agendar()"  *ngIf="OcultarReagendar">Agendar</button>
+                    <button type="button" class="texto_agendar_nuevo" (click)="REagendar()" *ngIf="reagendarVIDUAL">Re-Agendar</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="container" *ngIf="agendaVacia">
+        <h2 class="indicacion_agendar padding_top_contenedor">Gestiona las Citas de este Usuario</h2>
+        <p class="texto_indicador">Seleccione la cita , reprogramela o eliminela</p>
+
+        <div class="row">
+            <div class="alert alert-primary" role="alert">
+                No tiene citas Agendadas
+              </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="container" *ngIf="reAgendar">
+        <h2 class="indicacion_agendar padding_top_contenedor">Historial de citas</h2>
+        <p class="texto_indicador">Seleccione la cita , reprogramela o eliminela</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bajar_tarjeta" style="width: 18rem;">
+                    <!--<img src="../../../assets/img/medico.jpg" class="card-img-top" alt="...">-->
+                    <div class="card-body">
+                    <h5 class="card-title">{{ datosUnaCita.nombre }}</h5>
+                    <p class="card-text"><span class="fuente_bold">Doctor:</span> {{ datosUnaCita.doctor }}</p>
+                    <p class="card-text"><span class="fuente_bold">Sede:</span> {{ datosUnaCita.sede }}</p>
+                    <p class="card-text"><span class="fuente_bold">Fecha:</span> {{ datosUnaCita.horario }}</p>
+                    <p class="card-text"><span class="fuente_bold">Hora:</span> {{ datosUnaCita.hora }}</p>
+
+                    <a class="btn btn-primary eliminar"  (click)="eliminarCita()">Eliminar</a>
+                    <a class="btn btn-primary reagendar" (click)="reagendar()">Re-Agendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

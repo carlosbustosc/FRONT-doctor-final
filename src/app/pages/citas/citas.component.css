@@ -1,0 +1,96 @@
+.contenedor_principal_agendamiento {
+    width: 100%;
+    display: table;
+    background-image: url('https://img.freepik.com/fotos-premium/manos-persona-escribiendo-teclado-computadora-portatil-cerca-mientras-trabaja-inteligente-linea_122732-3999.jpg?w=2000');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.card {
+    background-color: #ffffff9c;
+}
+
+.formulario_citas{
+    width: 100%;
+    padding: 41px 47px;
+    padding-bottom: 4px;
+}
+
+.btn-primary.borrar_cita {
+    color: #fff;
+    background-color: #64c6f0;
+    border-color: #64c6f0;
+}
+
+
+
+.card-title {
+    margin-bottom: 0.75rem;
+    color: #3c95d8;
+}
+
+.estilo_titulo_agda {
+    font-weight: 600;
+}
+
+.bajar_tabla {
+    padding-top: 20px;
+    padding: 0px 33px;
+    padding-bottom: 40px;
+}
+
+.fondo_de_pagina {
+    background-color: #ffffffbd;
+    text-align: center;
+}
+
+.card-text {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+button.btn.btn-primary {
+    float: left;
+    margin: 8px auto;
+}
+
+input.form-control.campo {
+    width: 38%;
+    float: left;
+}
+
+.card-title {
+    text-align: left;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+a.texto_volver {
+    padding: 5px 17px 9px 14px;
+    background-color: #64c6f0;
+    font-size: 19px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 28px;
+    border-radius: 5px;
+    border: 1px solid #64c6f0;
+    cursor: pointer;
+}
+
+.imagen_header {
+    padding-top: 40px;
+}
+
+.card-header {
+    background-color: inherit;
+    text-align: left;
+}
+
+button.btn.btn-primary.buscarCita {
+    color: #fff;
+    background-color: #64c6f0;
+    border-color: #64c6f0;
+    margin: 0px auto;
+}

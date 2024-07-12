@@ -1,0 +1,78 @@
+.contenedor_principal_login {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/img/fondo_login.jpg');
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+
+.alerta_tls {
+    width: 100%;
+    max-width: 505px;
+    margin: 0px auto 30px auto;
+    background-color: #ffffffb0;
+    padding: 20px 40px;
+    border-radius: 0px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.cajon_contenedor {
+    width: 100%;
+    display: table;
+    margin: auto
+}
+
+.contenedor_formulario_login {
+    width: 488px;
+    display: table;
+    background-color: #ffffffa6;
+    margin: auto;
+    position: relative;
+    padding: 30px 22px;
+    border-radius: 9px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #003487;
+}
+
+.registrarme {
+    float: right;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+    color: #3c95d8;
+    margin-left: 10px;
+}
+
+.registrarme:hover {
+    text-decoration: underline;
+}
+
+.texto_indicador {
+    float: right;
+}
+
+.ingresar {
+    padding: 5px 17px 9px 17px;
+    background-color: #64c6f0;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    top: -7px;
+    left: 2px;
+    border-radius: 5px;
+    border: 1px solid #64c6f0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ingresar:hover {
+    background-color: #fff;
+    color: #64c6f0;
+    text-decoration: none;
+}

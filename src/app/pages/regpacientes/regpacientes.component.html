@@ -1,0 +1,105 @@
+<div class="contenedor_principal_rpacientes">
+
+    <div class="cajonVolver" (click)="volverPacientes()">
+        <a class="texto_volver"><i class="fa-solid fa-reply"></i></a>
+    </div>
+
+    <div class="container contenedor_ltsx">
+        <h1 class="registrar_paciente"><img src="../../../assets/img/usuario.png" class="icono_paciente" /> Registrar paciente</h1>
+        <hr class="linea_divisora_ltsx">
+        <form [formGroup]="datosPaciente" (ngSubmit)="registrarPaciente()">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+
+                            <label>Nombres Completos</label>
+                            <input type="text" class="form-control" formControlName="nombre">
+                            <small class="text-danger" *ngIf="NombreInvalido">Escriba el nombre completo</small>
+                        </div>
+
+                        <div class="col-md-12 form-group">
+                            <label>Documento</label>
+                            <input type="text" class="form-control" formControlName="documento" />
+                            <small class="text-danger" *ngIf="documentoNoValido">Escriba su numero de documento</small>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label>edad</label>
+                            <input type="number" class="form-control" formControlName="edad" />
+                            <small class="text-danger" *ngIf="edadNoValido">Escriba su edad</small>
+
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label>Tipo de sangre</label>
+                            <select class="form-control" formControlName="sangre">
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                            <small class="text-danger" *ngIf="sangreNoValida">seleccione tipo de sangre</small>
+
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label>Patologia</label>
+                            <input type="text" class="form-control" formControlName="patologia" />
+                            <small class="text-danger" *ngIf="patologiaNoValida">Escriba patologia</small>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="col-md-12 form-group">
+                        <label>Ciudad</label>
+                        <select class="form-control" formControlName="ciudad">
+                            <option class="form-control" *ngFor="let ciudades of selectCiudades" [value]="ciudades.municipio">{{ ciudades.municipio }}</option>
+                        </select>
+                        <small class="text-danger" *ngIf="ciudadNoValida">Selecciona la ciudad de residencia</small>
+
+                    </div>
+
+                    <div class="col-md-12 form-group">
+                        <label>Direccion</label>
+                        <input type="text" class="form-control" formControlName="direccion" />
+                        <small class="text-danger" *ngIf="direccionNoValida">Escriba la dirección</small>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label>telefono</label>
+                        <input type="text" class="form-control" formControlName="telefono" />
+                        <small class="text-danger" *ngIf="telefonoNoValido">Escriba el telefono</small>
+
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label>correo electronico</label>
+                        <input type="email" class="form-control" formControlName="correo" />
+                        <small class="text-danger" *ngIf="correoNoValido">Escriba el correo</small>
+
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label>Nombre familiar cercano</label>
+                        <input type="text" class="form-control" formControlName="nombreFamiliar" />
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label>Telefono familiar cercano</label>
+                        <input type="text" class="form-control" formControlName="telefonoFamiliar" />
+                    </div>
+                </div>
+
+
+                <div class=" col-md-12 ">
+                    <label>Descripcion paciente</label>
+                    <textarea class="form-control " name=" " id=" " rows="3 " formControlName="descripcion"></textarea>
+                </div>
+
+                <div class="col-md-12 ">
+                    <button class="btn btn-primary boton_registrar "><i _ngcontent-bnh-c51=" " class="fa-solid fa-user-plus "></i> Registrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

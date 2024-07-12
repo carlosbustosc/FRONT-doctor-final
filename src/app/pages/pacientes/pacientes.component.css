@@ -1,0 +1,140 @@
+.contenedor_principal_pacientes {
+    width: 100%;
+    display: table;
+    height: 100vh;
+    background-image: url('../../../assets/img/fondo_login.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.formularioBUsqueda{
+    width: 86%;
+    float: left;
+}
+
+button.btn.btn-primary.boton_buscar {
+    float: left;
+    background-color: #64c6f0;
+    border: 1px solid #64c6f0;
+}
+
+.bajar_contenedor {
+    position: relative;
+    padding-top: 70px;
+}
+
+.contenedor_registros_pacientes {
+    width: 1100px;
+    display: table;
+    margin: auto;
+}
+
+.barra_de_informacion {
+    width: 100%;
+    background-color: #ffffffd1;
+    padding: 0px 40px;
+    margin-bottom: 20px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+
+.nombre_paciente {
+    margin-bottom: 0px;
+    color: #3c95d8;
+    font-size: 17px;
+    font-weight: 400;
+    float: left;
+    text-transform: uppercase;
+}
+
+.foto_paciente {
+    width: 52px;
+    height: 50px;
+    float: left;
+    background-image: url('../../../assets/img/usuario.png');
+    background-size: 100%;
+}
+
+.base_informacion_paciente {
+    width: 90%;
+    display: table;
+    margin-left: 76px;
+}
+
+.eliminar_dato {
+    margin-left: 30px;
+}
+
+.eliminar_dato:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+}
+
+.editar {
+    margin-left: 30px;
+}
+
+.editar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: green;
+}
+
+.historial {
+    margin-left: 30px;
+}
+
+.historial:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.acciones_pacientes {
+    width: auto;
+    float: right;
+}
+
+.espacio_bottom {
+    margin-bottom: 50px !important;
+}
+
+.texto_agregar_nuevo {
+    width: 163px;
+    background-color: #64c6f0;
+    padding: 14px 9px;
+    float: right;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #64c6f0;
+}
+
+.texto_agregar_nuevo:hover {
+    background-color: #fff;
+    color: #64c6f0;
+    border: 1px solid #64c6f0;
+}
+
+a.texto_volver {
+    padding: 5px 17px 9px 14px;
+    background-color: #64c6f0;
+    font-size: 19px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 28px;
+    border-radius: 5px;
+    border: 1px solid #64c6f0;
+    cursor: pointer;
+}
+
+a.texto_volver:hover {
+    border: 1px solid #64c6f0;
+    background-color: #fff;
+    color: #64c6f0;
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+<div class="contenedor_principal_informacion">
+    <div class="contenido_informacion">
+        <h1 class="nombre_persona"> {{ informacionDetallePaciente.nombre }} </h1>
+        <hr class="linea_divisora">
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="foto_sanitas"></div>
+            </div>
+
+            <div class="col-md-7">
+                <p class="subtitulo_informacion"><span class="editar_texto">Documento: </span> {{ informacionDetallePaciente.documento }}</p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Edad: </span> {{ informacionDetallePaciente.edad }}</p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Tipo de sangre: </span> {{ informacionDetallePaciente.sangre }} </p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Patologia: </span> {{ informacionDetallePaciente.patologia }} </p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Ciudad: </span> {{ informacionDetallePaciente.ciudad }} </p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Direccion: </span> {{ informacionDetallePaciente.direccion }} </p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Telefono: </span> {{ informacionDetallePaciente.telefono }} </p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Correo Electronico: </span> {{ informacionDetallePaciente.correo }} </p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Nombre familiar cercano: </span> {{ informacionDetallePaciente.nombreFamiliar }} </p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Telefono familiar cercano: </span>{{ informacionDetallePaciente.telefonoFamiliar }} </p>
+                <p class="subtitulo_informacion"><span class="editar_texto">Descripcion paciente: </span>{{ informacionDetallePaciente.descripcion }}</p>
+
+
+                <a class="boton_volver_pacientes" (click)="volverPacientes()"><i _ngcontent-xop-c51="" class="fa-solid fa-user-plus"></i> Volver a pacientes</a>
+            </div>
+        </div>
+    </div>
+</div>

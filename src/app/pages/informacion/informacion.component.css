@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+.contenedor_principal_informacion {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/img/fondo_login.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenido_informacion {
+    max-width: 900px;
+    width: 50%;
+    display: table;
+    background-color: #ffffffe6;
+    padding: 0px 50px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.foto_sanitas {
+    width: 230px;
+    height: 227px;
+    background-image: url(https://play-lh.googleusercontent.com/Qw3MrkQwsYs2UV9QQlrXNumsmAXp0GlG0_2KSvtNQEtO9qhXuk38B1SuIE58wg1Xin8);
+    background-size: cover;
+    background-position-x: -9px;
+    margin: auto;
+}
+
+.tamano_icono {
+    font-size: 35px;
+}
+
+.nombre_persona {
+    margin-top: 34px;
+    margin-bottom: 19px;
+    color: #64c6f0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.subtitulo_informacion {
+    font-size: 18px;
+}
+
+.editar_texto {
+    font-weight: 500;
+}
+
+a.boton_volver_pacientes {
+    width: 194px;
+    background-color: #64c6f0;
+    padding: 10px 6px;
+    float: left;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+    border: 1px solid #64c6f0;
+    margin-top: 90px;
+    float: right;
+}
+
+a.boton_volver_pacientes:hover {
+    background-color: #fff;
+    color: #64c6f0;
+    border: 1px solid #64c6f0;
+}
+
+.linea_divisora {
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: #3176c5;
+    margin-bottom: 40px;
+}

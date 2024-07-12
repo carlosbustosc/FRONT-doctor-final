@@ -1,0 +1,71 @@
+<div class="contenedor_principal_pacientes">
+    <div class="cajonVolver" (click)="volverInicio()">
+        <a class="texto_volver"><i class="fa-solid fa-reply"></i></a>
+    </div>
+    <div class="container bajar_contenedor">
+
+        <div class="contenedor_registros_pacientes">
+            <form>
+                <div class="row espacio_bottom">
+                    <div class="col-md-6">
+                        <input type="email" #buscarPaciente (keyup)="barra( buscarPaciente.value )"class="form-control formularioBUsqueda" id="exampleFormControlInput1" placeholder="Busque al paciente por el numero de cedula">
+                        <button class="btn btn-primary boton_buscar" (click)="buscar( buscarPaciente.value )">Buscar</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="agregar_paciente" (click)="registrarPacientes()">
+                            <p class="texto_agregar_nuevo"><i class="fa-solid fa-user-plus"></i> AGREGAR NUEVO</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--pacientes resultado busqueda-->
+            <!--
+            <app-card (borrarPacienteM)="borrarPaciente( $event, $event )" (editarM)="editar( $event )" (verInformacionM)="verInformacion( $event )" (AgendarCitaM)="AgendarCita( $event )" [pacientesRespuestabusqueda]="pacientesRespuestabusqueda" [pacientesResultadoBusqueda]="pacientesResultadoBusqueda"></app-card>
+            -->
+
+            <!--alert-->
+            <div class="alert alert-primary" role="alert" *ngIf="noRegistros">
+                No existen el registro
+            </div>
+
+
+            <div *ngIf="pacientesRespuestabusqueda">
+                <div class="barra_de_informacion">
+                    <div class="foto_paciente"></div>
+                    <div class="base_informacion_paciente">
+                        <p class="nombre_paciente">{{ pacientesResultadoBusqueda.nombre    }}</p>
+
+                        <div class="acciones_pacientes">
+                          
+                            <span class="historial" (click)="AgendarCita( pacientesResultadoBusqueda._id )">Agendar Cita </span>
+                            <span class="historial" (click)="verInformacion( pacientesResultadoBusqueda._id )">Historia </span>
+                            <span class="editar" (click)="editar( pacientesResultadoBusqueda._id )">Editar </span>
+                            <span class="eliminar_dato" (click)="borrarPaciente( pacientesResultadoBusqueda )">Eliminar </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---pacientes cargado automaticamente-->
+            <div *ngIf="pacientesAutomaticos">
+                <div class="barra_de_informacion" *ngFor="let pacientes of  obtenerPacientes; let i = index">
+                    <div class="foto_paciente"></div>
+                    <div class="base_informacion_paciente">
+                        <p class="nombre_paciente">{{ pacientes.nombre }}</p>
+
+                        <div class="acciones_pacientes">
+                   
+                            <span class="historial" (click)="AgendarCita( pacientes._id  )">Agendar Cita </span>
+                            <span class="historial" (click)="verInformacion( pacientes._id )">Historia </span>
+                            <span class="editar" (click)="editar( pacientes._id )">Editar </span>
+                            <span class="eliminar_dato" (click)="borrarPaciente( pacientes )">Eliminar </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

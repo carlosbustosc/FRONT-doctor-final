@@ -1,0 +1,55 @@
+.contenedor_navbar {
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid #0d6efd;
+    padding: 6px 50px 14px 50px;
+}
+
+.imagen_de_logo {
+    width: 160px;
+}
+
+.contenedor_nombre_usuario {
+    width: auto;
+    display: table;
+    float: right;
+    display: none;
+}
+
+.contenedor_nombre_usuario p {
+    margin-bottom: 0px;
+    font-size: 17px;
+    color: #3e98da;
+    padding: 4px 0px 0px 0px;
+    font-weight: 400;
+}
+
+.icono_personaje {
+    position: relative;
+    top: 5px;
+    right: 4px;
+    font-size: 30px;
+}
+
+.flecha_desplegar {
+    cursor: pointer;
+}
+
+.seccion_desplegable_perfil {
+    width: 131px;
+    background-color: white;
+    display: table;
+    height: 37px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+.cerrar_session {
+    cursor: pointer;
+}
+
+.cerrar_session:hover {
+    text-decoration: underline;
+}

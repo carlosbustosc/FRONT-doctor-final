@@ -1,0 +1,40 @@
+<div class="contenedor_principal_login">
+
+    <div class="cajon_contenedor">
+        <div class="alerta_tls">
+            Escriba su usuario y contraseña para ingresar a nuestra plataforma
+        </div>
+
+        <div class="contenedor_formulario_login">
+            <form [formGroup]="login" (ngSubmit)="ingresar()">
+
+                <div class="col-md-12 form-group">
+                    <label>Usuario</label>
+                    <input type="text" class="form-control" formControlName="usuario" />
+                    <small class="text-danger" *ngIf="usuarioNoValido">Escriba el usuario o correo electronico</small>
+                    <small class="text-danger" *ngIf="EmailNoExiste">El email no existe</small>
+
+                </div>
+
+                <div class="col-md-12 form-group">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" formControlName="pass" />
+                    <small class="text-danger" *ngIf="passNoValido">Escriba la contraseña</small>
+                    <small class="text-danger" *ngIf="claveNoValida">Clave No Valida</small>
+                </div>
+
+                <div class="col-md-12 form-group">
+                    <input type="checkbox" formControlName="check" class="form-check-input">&nbsp;
+                    <label class="form-check-label" for="exampleCheck1">Recordar mi usuario</label>
+
+                </div>
+
+                <div class="col-md-12">
+                    <button type="submit" class="ingresar">Ingresar</button>
+                    <label class="form-check-label texto_indicador" for="exampleCheck1">¿No esta registrado? / <span class="registrarme" [routerLink]="['/registro']">  Registrarme</span></label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
