@@ -53,3 +53,26 @@
 .cerrar_session:hover {
     text-decoration: underline;
 }
+
+@media(max-width:650px){
+
+    .imagen_de_logo{
+        width: 145px;
+    }
+
+    .contenedor_nombre_usuario {
+        float: inherit;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:385px){
+
+    .imagen_de_logo{
+        width: 132px;
+    }
+
+   
+
+}

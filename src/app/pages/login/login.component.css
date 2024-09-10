@@ -76,3 +76,88 @@ label {
     color: #64c6f0;
     text-decoration: none;
 }
+
+@media(max-width:650px){
+
+    .contenedor_formulario_login{
+
+        width: 100%;
+    }
+
+    .cajon_contenedor {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .alerta_tls {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .texto_indicador{
+        float: left;
+        margin-top: 7px;
+    }
+
+}
+
+@media(max-width:385px){
+
+    .alerta_tls {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 19px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .registrarme {
+        font-size: 15px;
+    }
+
+    .ingresar {
+        padding: 3px 17px 4px 17px;
+        font-size: 15px;
+    }
+    
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    
+    
+}
+
+@media(max-width:360px){
+
+    .alerta_tls{
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 18px;
+    }
+
+    .registrarme{
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:354px){
+
+    .alerta_tls {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 18px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .registrarme{
+        font-size: 13px;
+    }
+
+}

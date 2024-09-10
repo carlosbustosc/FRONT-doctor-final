@@ -138,3 +138,166 @@ a.texto_volver:hover {
     color: #64c6f0;
     text-decoration: none;
 }
+
+@media(max-width:650px){
+
+    .contenedor_registros_pacientes {
+        width: 100%;
+    }
+
+    .formularioBUsqueda{
+        width: 100%;
+        float: left;
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+
+    .texto_agregar_nuevo {
+        width: 80px;
+    }
+
+    .texto_agregar_nuevo {
+        width: 80px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .fa-user-plus:before {
+        content: "\f234";
+        padding-bottom: 20px;
+        font-size: 19px;
+    }
+
+    .barra_de_informacion {
+        display: table;
+    }
+
+    .base_informacion_paciente {
+        width: 100%;
+        display: table;
+        margin-left: 0px;
+    }
+
+    .nombre_paciente {
+        margin-bottom: 0px;
+        color: #3c95d8;
+        font-size: 15px;
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .barra_de_informacion{
+        width: 100%;
+        background-color: #ffffffd1;
+        padding: 25px 40px;
+    }
+    
+    .espacio_bottom{
+        margin-bottom: 7px !important;
+    }
+
+    .acciones_pacientes {
+        width: 100%;
+        float: inherit;
+    }
+
+    .historial, .editar, .eliminar_dato{
+        margin-left: 0px;
+        display: inline-block;
+        width: 91%;
+        background-color: #64c6f0;
+        margin-bottom: 14px;
+        text-align: center;
+        padding: 6px 0px;
+        color: #fff;
+        border-radius: 17px;
+        margin: 0px auto 14px 0px;
+    }
+
+    
+
+   
+
+    .bajar_contenedor{
+        position: relative;
+        padding-top: 0;
+        margin-top: 65px;
+    }
+
+    a.texto_volver{
+        padding: 3px 11px 6px 10px;
+        background-color: #64c6f0;
+        font-size: 19px;
+        color: #fff;
+        position: relative;
+        top: 30px;
+        left: 15px;
+        border-radius: 2px;
+        border: 1px solid #64c6f0;
+        cursor: pointer;
+    }
+
+    .foto_paciente {
+        
+        float: none;
+        margin: auto;
+    }
+
+}
+
+@media(max-width:385px){
+
+    span.historial, .editar, .eliminar_dato {
+        font-size: 15px;
+        padding: 5px 0px;
+        margin: 0px auto 11px 0px;
+    }
+
+    button.btn.btn-primary.boton_buscar {
+        float: left;
+        background-color: #64c6f0;
+        border: 1px solid #64c6f0;
+        font-size: 14px;
+    }
+
+    .foto_paciente{
+        float: none;
+        margin: auto;
+        width: 47px;
+        height: 49px;
+    }
+
+}
+
+@media(max-width:345px){
+
+    span.historial, .editar, .eliminar_dato {
+        font-size: 14px;
+        padding: 4px 0px;
+    }
+
+    .nombre_paciente{
+        margin-bottom: 0px;
+        color: #3c95d8;
+        font-size: 14px;
+    }
+
+    .formularioBUsqueda{
+      
+        font-size: 14px;
+    }
+
+    .texto_agregar_nuevo {
+        width: 80px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .foto_paciente{
+        float: none;
+        margin: auto;
+        width: 43px;
+        height: 41px;
+    }
+}

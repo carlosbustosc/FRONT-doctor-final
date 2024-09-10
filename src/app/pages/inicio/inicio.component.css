@@ -64,3 +64,54 @@
     text-align: center;
     color: #106e96;
 }
+
+@media(max-width:650px){
+
+
+    .contenedor_iconos{
+        width: 78%;
+        display: table;
+        margin: auto;
+    }
+
+    .seccion1, .seccion2{
+        width: 56%;
+        height: auto;
+        float: inherit;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .icono_seccion {
+        width: 100%;
+        padding: 20px 35px 1px 35px;
+    }
+
+    .contenedor_principal_inicio {
+        height: 88vh;
+        background-position-x: -402px;
+    }
+
+}
+
+
+@media(max-width:385px){
+
+    .selecciones_seccion {
+        font-size: 14px;
+    }
+
+    .texto_pacientes {
+        font-size: 13px;
+    }
+
+}
+
+
+@media(max-width:365px){
+
+    .contenedor_nombre_usuario p {
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+}

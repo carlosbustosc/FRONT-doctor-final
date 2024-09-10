@@ -78,3 +78,92 @@ a.boton_volver_pacientes:hover {
     background-color: #3176c5;
     margin-bottom: 40px;
 }
+
+@media(max-width:650px){
+
+
+    .contenido_informacion{
+
+        max-width: 900px;
+        width: 100%;
+        display: table;
+        background-color: #ffffffe6;
+        padding: 0px 38px;
+    }
+
+    .nombre_persona{
+        margin-top: 64px;
+        font-size: 19px;
+    }
+
+    .foto_sanitas {
+        width: 100%;
+        height: 317px;
+        margin-bottom:30px;
+    }
+
+    .subtitulo_informacion{
+        font-size: 18px;
+        margin-bottom: 9px;
+    }
+
+    a.boton_volver_pacientes {
+      
+        padding: 7px 6px;
+       
+        font-size: 16px;
+       
+        margin-bottom: 40px;
+        border: 1px solid #64c6f0;
+        margin-top: 40px;
+    }
+   
+}
+
+
+@media(max-width:365px){
+
+    .nombre_persona{
+        margin-top: 47px;
+        font-size: 16px;
+    }
+
+    .subtitulo_informacion{
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    a.boton_volver_pacientes{
+        padding: 6px 0px;
+        font-size: 15px;
+        margin-bottom: 40px;
+        border: 1px solid #64c6f0;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media(max-width:345px){
+
+
+    .contenido_informacion{
+        max-width: 900px;
+        width: 100%;
+        display: table;
+        background-color: #ffffffe6;
+        padding: 0px 25px;
+    }
+
+    .foto_sanitas{
+        width: 100%;
+        height: 250px;
+        margin-bottom: 27px;
+    }
+
+    a.boton_volver_pacientes {
+        padding: 6px 0px;
+        font-size: 14px;
+    }
+
+}

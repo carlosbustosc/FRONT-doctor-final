@@ -119,3 +119,89 @@ a.btn.btn-primary.eliminar {
 
     padding-top: 50px;
 }
+
+@media(max-width:650px){
+
+    .contenedor_agendar {
+        width: 100%;
+    }
+
+    button.texto_agendar_nuevo.gestionar {
+      
+        background-color: #0c739f;
+        margin-top: 67px;
+        margin-left: 26px;
+        float: inherit;
+        width: 51%;
+        padding: 3px;
+        position: relative;
+        margin-bottom: -3px;
+        font-size: 15px;
+    }
+
+    .contenedor_agendar{
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .indicacion_agendar{
+        padding: 20px 0px 6px 0px;
+        color: #64c6f0;
+        margin-bottom: 0px;
+        font-size: 24px;
+    }
+
+ 
+    .container{
+        padding: 26px 35px;
+        margin-bottom: 45px;
+        display: inline-block;
+    }
+
+    
+}
+
+
+@media(max-width:365px){
+
+    a.texto_volver{
+        padding: 4px 13px 6px 11px;
+    }
+
+    .texto_agendar_nuevo{
+      
+        padding: 4px 1px 5px 2px;
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:345px){
+
+    a.texto_volver {
+        padding: 4px 13px 6px 11px;
+        font-size: 18px;
+    }
+
+    button.texto_agendar_nuevo.gestionar{
+        background-color: #0c739f;
+        margin-top: 58px;
+    }
+
+    .indicacion_agendar{
+        padding: 0px 0px 6px 0px;
+        color: #64c6f0;
+        margin-bottom: 0px;
+        font-size: 22px;
+    }
+
+    .texto_indicador{
+        margin-bottom: -5px;
+        font-size: 15px;
+    }
+
+    .form-control {
+       
+        font-size: 14px;
+    }
+}

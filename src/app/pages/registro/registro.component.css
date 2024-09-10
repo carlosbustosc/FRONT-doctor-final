@@ -55,3 +55,22 @@ label {
     color: #64c6f0;
     text-decoration: none;
 }
+
+@media(max-width:650px){
+
+    .contenedor_formulario_registro{
+        width: 89%;
+    }
+
+
+    label {
+        font-size: 15px;
+    }
+
+    .texto_login {
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 13px;
+        color: #007bff;
+    }
+}

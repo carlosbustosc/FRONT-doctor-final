@@ -87,3 +87,78 @@ a.texto_volver:hover {
     color: #64c6f0;
     text-decoration: none;
 }
+
+
+@media(max-width:650px){
+
+    .container.contenedor_ltsx{
+        width: 92%;
+        float: inherit;
+        margin: 20px auto;
+        padding: 40px 42px;
+    }
+
+    .registrar_paciente {
+        margin-top: -5px;
+        font-size: 24px;
+        color: #3c95d8;
+    }
+
+    .btn.btn-primary.boton_registrar{
+        width: 100%;
+        background-color: #64c6f0;
+        padding: 4px 6px;
+    }
+
+}
+
+
+@media(max-width:385px){
+
+    .registrar_paciente{
+        margin-top: -5px;
+        font-size: 20px;
+        color: #3c95d8;
+    }
+
+    label{
+        color: #0077d1;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .col-md-6 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .btn.btn-primary.boton_registrar{
+        width: 100%;
+        background-color: #64c6f0;
+        padding: 4px 6px;
+        font-size: 16px;
+    }
+
+    .icono_paciente{
+        width: 33px;
+        margin-top: -8px;
+    }
+
+    a.texto_volver {
+        font-size: 17px;
+        padding: 5px 10px 6px 9px;
+        border-radius: 4px;
+    }
+
+}
+
+
+@media(max-width:365px){
+
+    label {
+        color: #0077d1;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}

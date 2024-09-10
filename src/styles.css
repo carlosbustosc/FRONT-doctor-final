@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@media(max-width:650px){
+    .swal2-title {
+        font-size: 20px !important;
+    }
+
+    div:where(.swal2-container) .swal2-html-container {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+}
+
