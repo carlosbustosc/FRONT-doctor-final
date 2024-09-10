@@ -11,5 +11,21 @@
         line-height: 20px !important;
     }
 
+    .swal2-styled {
+       
+        padding: 5px 10px !important;
+        font-size: 17px !important;
+    }
+
+}
+
+@media(max-width:365px){
+
+    .swal2-styled {
+       
+        padding: 5px 10px !important;
+        font-size: 15px !important;
+    }
+
 }
 

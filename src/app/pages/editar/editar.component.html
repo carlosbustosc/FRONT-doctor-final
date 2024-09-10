@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="col-md-12 form-group">
+                    <div class="col-md-12 form-group segunda_columna">
                         <label>Ciudad</label>
                         <select class="form-control" formControlName="ciudad">
                             <option class="form-control" *ngFor="let ciudades of selectCiudades" [value]="ciudades.municipio">{{ ciudades.municipio }}</option>
@@ -63,35 +63,35 @@
 
                     </div>
 
-                    <div class="col-md-12 form-group">
+                    <div class="col-md-12 form-group segunda_columna">
                         <label>Direccion</label>
                         <input type="text" class="form-control" formControlName="direccion" />
                         <small class="text-danger" *ngIf="direccionNoValida">Escriba la dirección</small>
                     </div>
-                    <div class="col-md-12 form-group">
+                    <div class="col-md-12 form-group segunda_columna">
                         <label>telefono</label>
                         <input type="text" class="form-control" formControlName="telefono" />
                         <small class="text-danger" *ngIf="telefonoNoValido">Escriba el telefono</small>
 
                     </div>
-                    <div class="col-md-12 form-group">
+                    <div class="col-md-12 form-group segunda_columna">
                         <label>correo electronico</label>
                         <input type="email" class="form-control" formControlName="correo" />
                         <small class="text-danger" *ngIf="correoNoValido">Escriba el correo</small>
 
                     </div>
-                    <div class="col-md-12 form-group">
+                    <div class="col-md-12 form-group segunda_columna">
                         <label>Nombre familiar cercano</label>
                         <input type="text" class="form-control" formControlName="nombreFamiliar" />
                     </div>
-                    <div class="col-md-12 form-group">
+                    <div class="col-md-12 form-group segunda_columna">
                         <label>Telefono familiar cercano</label>
                         <input type="text" class="form-control" formControlName="telefonoFamiliar" />
                     </div>
                 </div>
 
 
-                <div class=" col-md-12 ">
+                <div class=" col-md-12 form-group segunda_columna">
                     <label>Descripcion paciente</label>
                     <textarea class="form-control " name=" " id=" " rows="3 " formControlName="descripcion"></textarea>
                 </div>
