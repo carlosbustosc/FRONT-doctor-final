@@ -1,5 +1,6 @@
 .contenedor_principal_agendamiento {
     width: 100%;
+        min-height: 100vh;
     display: table;
     background-image: url('https://img.freepik.com/fotos-premium/manos-persona-escribiendo-teclado-computadora-portatil-cerca-mientras-trabaja-inteligente-linea_122732-3999.jpg?w=2000');
     background-size: 100%;
@@ -40,8 +41,9 @@
 }
 
 .fondo_de_pagina {
-    background-color: #ffffffbd;
+      background-color: #ffffffbd;
     text-align: center;
+    margin-top: 40px;
 }
 
 .card-text {
@@ -80,7 +82,8 @@ a.texto_volver {
 }
 
 .imagen_header {
-    padding-top: 40px;
+     padding-top: 40px;
+    width: 41%;
 }
 
 .card-header {
