@@ -1,7 +1,7 @@
 {
   "name": "doctor",
   "version": "0.0.0",
-  "homepage": "https://carlosbustosc.github.io/FRONT-doctor",
+  "homepage": "https://carlosbustosc.github.io/admin-doctor",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
