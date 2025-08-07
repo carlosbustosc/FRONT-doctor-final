@@ -21,11 +21,12 @@
 }
 
 .foto_sanitas {
-    width: 230px;
+   width: 230px;
     height: 227px;
-    background-image: url(https://play-lh.googleusercontent.com/Qw3MrkQwsYs2UV9QQlrXNumsmAXp0GlG0_2KSvtNQEtO9qhXuk38B1SuIE58wg1Xin8);
-    background-size: cover;
-    background-position-x: -9px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnO4v8qHkVtBc3yoCZbeSemPSXk_sIPa3Jvg&s');
+    background-size: 86%;
+    background-position-x: 17px;
+    background-position-y: 9px;
     margin: auto;
 }
 
@@ -79,8 +80,17 @@ a.boton_volver_pacientes:hover {
     margin-bottom: 40px;
 }
 
+.foto_fondo{
+    overflow: hidden;
+}
+
 @media(max-width:650px){
 
+.contenedor_principal_informacion{
+    width: 100%;
+    display: table;
+   
+}
 
     .contenido_informacion{
 

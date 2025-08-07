@@ -23,7 +23,7 @@ export class DoctorService  {
 
   getCiudades(){
 
-    return this.http.get('https://www.datos.gov.co/resource/xdk5-pm3f.json')
+    return this.http.get('https://api-colombia.com/api/v1/department')
                     
   }
 

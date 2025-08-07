@@ -127,6 +127,14 @@ a.btn.btn-primary.eliminar {
 
 @media(max-width:650px){
 
+
+.contenedor_principal_agendar{
+    width: 100%;
+    height: auto;
+    background-image: url(https://altraducciones.com/sites/default/files/blog/medico.jpg);
+    background-size: cover;
+}
+
     .contenedor_agendar {
         width: 100%;
     }
@@ -146,7 +154,8 @@ a.btn.btn-primary.eliminar {
 
     .contenedor_agendar{
         width: 100%;
-        padding: 20px 0px;
+        padding: 20px 19px;
+        margin-top: 22px;
     }
 
     .indicacion_agendar{

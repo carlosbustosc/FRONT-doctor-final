@@ -56,7 +56,7 @@ export class EditarComponent implements OnInit {
     /*-------cargar ciudades--------*/
     this.conectarServicio.getCiudades()
         .subscribe( (resp:any) => {
-          console.log(resp)
+          console.log(resp.name)
             this.selectCiudades = resp;
         })
     /*-------cargar ciudades--------*/

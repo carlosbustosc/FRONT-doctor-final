@@ -57,7 +57,7 @@
                     <div class="col-md-12 form-group">
                         <label>Ciudad</label>
                         <select class="form-control" formControlName="ciudad">
-                            <option class="form-control" *ngFor="let ciudades of selectCiudades" [value]="ciudades.municipio">{{ ciudades.municipio }}</option>
+                            <option class="form-control" *ngFor="let ciudades of selectCiudades" [value]="ciudades.name">{{ ciudades.name }}</option>
                         </select>
                         <small class="text-danger" *ngIf="ciudadNoValida">Selecciona la ciudad de residencia</small>
 

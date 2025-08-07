@@ -7,6 +7,19 @@
     background-size: cover;
 }
 
+.administradores {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 28px;
+    color: #64c6f0;
+    width: fit-content;
+    display: block;
+    background-color: #ffffffc4;
+    margin: 0px auto 20px auto;
+    padding: 4px 10px 8px 12px;
+    border-radius: 4px;
+}
+
 .alerta_tls {
     width: 100%;
     max-width: 505px;
@@ -103,11 +116,18 @@ label {
 
 @media(max-width:385px){
 
-    .alerta_tls {
-        font-size: 15px;
-        line-height: 20px;
-        margin-bottom: 19px;
-    }
+
+.administradores{
+    text-align: center;
+    font-size: 22px;
+}
+
+.alerta_tls{
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
 
     label {
         font-size: 14px;
@@ -132,6 +152,12 @@ label {
 
 @media(max-width:360px){
 
+
+.administradores{
+    text-align: center;
+    font-size: 21px;
+}
+
     .alerta_tls{
         font-size: 14px;
         line-height: 19px;
@@ -144,12 +170,18 @@ label {
 
 }
 
-@media(max-width:354px){
+@media(max-width:345px){
 
-    .alerta_tls {
+
+    .administradores{
+        text-align: center;
+        font-size: 19px;
+    }
+
+.alerta_tls{
         font-size: 13px;
         line-height: 18px;
-        margin-bottom: 18px;
+        margin-bottom: 0px;
     }
 
     label {

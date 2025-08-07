@@ -5,11 +5,12 @@
             Escriba su usuario y contraseña para ingresar a nuestra plataforma
         </div>
 
+        <h1 class="administradores">Acceso para adminisradores</h1>
         <div class="contenedor_formulario_login">
             <form [formGroup]="login" (ngSubmit)="ingresar()">
 
                 <div class="col-md-12 form-group">
-                    <label>Usuario</label>
+                    <label>Correo</label>
                     <input type="text" class="form-control" formControlName="usuario" />
                     <small class="text-danger" *ngIf="usuarioNoValido">Escriba el usuario o correo electronico</small>
                     <small class="text-danger" *ngIf="EmailNoExiste">El email no existe</small>
